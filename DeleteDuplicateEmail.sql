@@ -1,0 +1,2 @@
+/*Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.*/
+delete from p1 using Person p1 inner join Person p2 where p1.Email = p2.Email and p1.Id > p2.Id
